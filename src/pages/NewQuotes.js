@@ -5,7 +5,7 @@ import QuoteForm from "../components/quotes/QuoteForm";
 import useHttp from "../hooks/use-http";
 import { addQuote } from "../lib/api";
 
-const NewQuotes = (p) => {
+const NewQuotes = () => {
   const { sendRequest, status } = useHttp(addQuote);
   const history = useHistory();
 
